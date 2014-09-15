@@ -1,8 +1,0 @@
-/* EMAIL SETTINGS */
-module.exports = {
-    service: 'Gmail',
-    auth: {
-        user: 'GMAIL HERE',
-        pass: 'GMAIL PASS'
-    }
-}
