@@ -1,0 +1,7 @@
+module.exports = {
+	host     : '198.57.149.60',
+	user     : 'durthacj_mwa',
+	password : 'spartan10385',
+	database : 'durthacj_www_wp',
+	port	 : '3306'
+}

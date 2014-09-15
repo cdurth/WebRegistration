@@ -1,0 +1,13 @@
+/* EMAIL SETTINGS */
+module.exports = {
+    host: "smtp.office365.com",
+    secureConnection: false, // TLS requires secureConnection to be false
+    port: 587, 
+    auth: {
+        user: "training@martinandassoc.com",
+        pass: "August2014!"
+    },
+    tls: {
+        ciphers:'SSLv3'
+    }
+}

@@ -1,0 +1,43 @@
+<div class="col-lg-6">
+	<div class="form-group">
+	    <label for="name">Name</label>
+	    <input type="text" class="form-control" name="name" ng-model="formData.name" required>
+	</div>
+	<div class="form-group">
+	    <label for="name">Company</label>
+	    <input type="text" class="form-control" name="company" ng-model="formData.company" required>
+	</div>
+	<div class="form-group">
+	    <label for="email">Email</label>
+	    <input type="text" class="form-control" name="email" ng-model="formData.email" required>
+	</div>
+	<div class="form-group">
+	    <label for="name">Phone #</label>
+	    <input type="text" class="form-control" name="phoneno" ng-model="formData.phoneno" required>
+	</div>
+</div>
+<div class="col-lg-6">
+	<div class="form-group">
+	    <label for="name">Address</label>
+	    <input type="text" class="form-control" name="address" ng-model="formData.address" required>
+	</div>
+	<div class="form-group">
+	    <label for="name">City</label>
+	    <input type="text" class="form-control" name="city" ng-model="formData.city" required>
+	</div>
+	<div class="form-group">
+	    <label for="name">State</label>
+	    <input type="text" class="form-control" name="state" ng-model="formData.state" required>
+	</div>
+	<div class="form-group">
+	    <label for="name">Zipcode</label>
+	    <input type="text" class="form-control" name="zipcode" ng-model="formData.zipcode" required>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-6 col-xs-offset-3">
+	    <a ui-sref="form.class" id="next-btn" class="btn btn-block btn-info">
+	    	Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+	    </a>
+	</div>
+</div>

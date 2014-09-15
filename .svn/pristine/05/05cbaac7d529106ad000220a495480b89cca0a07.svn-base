@@ -1,0 +1,55 @@
+<div class="col-lg-6">
+	<!-- NAME -->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">
+        <label>Name*</label>
+        <input type="text" name="username" class="form-control" ng-model="formData.name" ng-minlength="5" required>
+        <p ng-show="userForm.username.$error.minlength" class="help-block">Enter First and Last Name</p>
+
+    </div>
+    <!-- COMPANY -->
+	<div class="form-group">
+	    <label for="name">Company</label>
+	    <input type="text" class="form-control" name="company" ng-model="formData.company">
+	</div>
+	<!-- EMAIL -->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+        <label>Email*</label>
+        <input type="email" name="email" class="form-control" ng-model="formData.email" required>
+        <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+    </div>
+    <!-- PHONENO -->
+  	<div class="form-group" ng-class="{ 'has-error' : userForm.phoneno.$error.pattern && !userForm.phoneno.$pristine }">
+ 		<label>Phone #*</label>
+ 		<input type="text" class="form-control" name="phoneno" ng-pattern="PHONE_REGEX" ng-model="formData.phoneno" required>
+        <p ng-show="userForm.phoneno.$error.pattern" class="help-block">Please enter a valid phone number</p>
+	</div>
+</div>
+<div class="col-lg-6">
+	<!-- ADDRESS -->
+	<div class="form-group">
+	    <label for="name">Address</label>
+	    <input type="text" class="form-control" name="address" ng-model="formData.address" required>
+	</div>
+	<!-- CITY -->
+	<div class="form-group">
+	    <label for="name">City</label>
+	    <input type="text" class="form-control" name="city" ng-model="formData.city" required>
+	</div>
+	<!-- STATE -->
+	<div class="form-group">
+	    <label for="name">State</label>
+	    <input type="text" class="form-control" name="state" ng-model="formData.state" required>
+	</div>
+	<!-- ZIPCODE -->
+	<div class="form-group">
+	    <label for="name">Zipcode</label>
+	    <input type="text" class="form-control" name="zipcode" ng-model="formData.zipcode" required>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-6 col-xs-offset-3">
+	    <a  id="next-btn" class="btn btn-block btn-info" ng-click="validate()">
+	    	Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+	    </a>
+	</div>
+</div>

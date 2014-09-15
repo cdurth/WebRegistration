@@ -1,0 +1,35 @@
+<div class="row">
+<div id="form-wrap" class="col-sm-8 col-sm-offset-2">
+  <div id="top-bar" class="row">
+    <div class="col-xs-6">
+     <!--  <img src="Logo.png" class="img-responsive" alt="Responsive image"> -->
+    </div>
+    <div class="col-xs-6">
+      <h1>Training Registration</h1>
+    </div>
+  </div>
+
+  <div id="form-container">
+  
+      <div class="page-header text-center">
+          <div id="status-buttons" class="text-center">
+              <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+              <a ui-sref-active="active" ui-sref=".class"><span>2</span> Class</a>
+              <a ui-sref-active="active" ui-sref=".confirm"><span>3</span> Confirm</a>
+          </div>
+      </div>
+      
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form name="userForm" id="signup-form" ng-submit="processForm()" novalidate>
+          <!-- our nested state views will be injected here -->
+          <div id="form-views" ui-view></div>
+      </form>
+  
+  <!-- show our formData as it is being typed -->
+  <pre>
+    {{ formData }}
+  </pre>
+
+</div>
+</div>
+

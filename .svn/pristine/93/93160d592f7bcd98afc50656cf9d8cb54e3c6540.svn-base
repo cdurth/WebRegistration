@@ -1,0 +1,14 @@
+  {
+  "name"         : "MWARegistrationAPI",
+  "version"      : "0.0.1",
+  "description"  : "MWA Registration API",
+  "main"         : "app.js",
+  "author"       : "CJD",
+  "dependencies" : {
+    "express"    : "*",
+    "mysql"      : "*",
+    "body-parser": "*",
+    "nodemailer" : "*",
+    "nodemailer-smtp-transport" : "*"
+    }
+  }
